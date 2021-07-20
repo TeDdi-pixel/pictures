@@ -1,0 +1,388 @@
+*{
+    box-sizing: border-box;
+}
+body{
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Uchen', serif;
+  background-color: #2B303B;
+  color: white;
+  padding: 0;
+  margin: 0.5%;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+ul{
+  text-decoration: none;
+  list-style: none;
+}
+
+.info{
+  top: 2%;
+  font-size: 20px;
+  background-color: #3A4150;
+  display: grid;
+  justify-content: center;
+  margin-top: 0px;
+}
+
+.info_text{
+  text-align: center;
+}
+
+.logo{
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+  position: fixed;
+  top: 2%;
+  left: 95%;
+}
+
+.logo:hover{
+  cursor: pointer;
+}
+
+.wrapper{
+  display: grid;
+  grid-template-columns: repeat(1,2fr 1fr 2fr 1fr);
+  grid-gap: 15px;
+  grid-auto-columns: minmax(200px, auto);
+  grid-auto-rows: minmax(200px, auto);
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+
+.block{
+  background-color: #434B5C;
+  border: 1px solid #68748E;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 75%;
+  transition: all 0.3s ease-in-out;
+  border-radius: 2%;
+  filter: blur(3px);
+}
+
+.block:hover{
+  box-shadow: 0 0 15px #000000;
+  opacity:100%;
+  border-radius: 2%;
+  filter: blur(0px);
+  transition: all 0.3s ease-in-out;
+}
+
+.block1{
+  background-image: url("images/zoom.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.block2{
+  background-image: url("images/space1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.block3{
+  background-image: url("images/space2.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column-start: 1;
+  grid-column-end: 1;
+}
+
+.block4{
+  background-image: url("images/maxresdefault.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+.block5{
+  background-image: url("images/juice-wrld-trailer.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+  font-weight:  bolder;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 5;
+}
+
+.block6{
+  background-image: url("images/maxresdefault-1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: black;
+  font-weight:  bolder;
+  grid-row-start: 3;
+  grid-row-end: 4;
+}
+
+.block7{
+  background-image: url("images/0.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-weight:  bolder;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+
+.block8{
+  background-image: url("images/mkju1aljtlt21.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-weight:  bolder;
+  grid-row-start: 1;
+  grid-row-end: 5;
+}
+
+.block9{
+  background-image: url("images/149713-purpur-grafika-fioletovyj-voda-kompaniya_huawei_mediapad_na_m6-1080x1920.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  font-weight:  bolder;
+  grid-row-start: 5;
+  grid-row-end: 9;
+
+}
+
+.block10{
+  background-image: url("images/maxresdefault (1).jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: black;
+  font-weight:  bolder;
+  grid-column-start: 2;
+  grid-row-start: 5;
+  grid-row-end: 7;
+}
+
+.block11{
+  background-image: url("images/google3.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-weight:  bolder;
+  color: black;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-end: 6;
+}
+
+.block12{
+  background-image: url("images/1618052853_11-p-oboi-smeshnie-mopsi-11.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-weight:  bolder;
+}
+
+.block13{
+  background-image: url("images/serdtse_neon_podsvetka_119982_938x1668.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  grid-column-start: 4;
+  grid-row-start: 6;
+  grid-row-end: 10;
+}
+
+.block14{
+  background-image: url("images/photo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 7;
+  grid-row-end: 9;
+}
+
+.block15{
+  background-image: url("images/171156_qNsv8gl7yz_passengers.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  grid-row-start: 9;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-end: 11;
+}
+
+.block16{
+  background-image: url("images/f32c21bd7a7500475c29b494cbbecf.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  grid-column-start: 4;
+  grid-row-start: 10;
+  grid-row-end: 13 ;
+}
+
+.block17{
+  background-image: url("images/645241530198402.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  grid-column-start: 1;
+  grid-row-start: 11;
+  grid-row-end: 14;
+}
+
+.block18{
+  background-image: url("images/nyivyxpscwv61.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: black;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 11;
+  grid-row-end: 13;
+}
+
+.block19{
+  background-image: url("images/xxtenations-nawpic-12.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  grid-column-start: 2;
+  grid-column-end: 5;
+  grid-row-start: 13;
+  grid-row-end: 15;
+}
+
+.block20{
+  background-image: url("images/840px-Google-Blokirovka-Massovaya-Akkauntov-Uchetnyh-zapisei-2021-3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.block21{
+  background-image: url("images/maxresdefault (2).jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.block22{
+  background-image: url("images/juice-wrld-photos-3.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 15;
+  grid-row-end: 18;
+}
+
+.block23{
+  background-image: url("images/Zhongli-returns-to-Genshin-Impact.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 16;
+  grid-row-end: 18;
+}
+
+.block24{
+  background-image: url("images/Pornhub-style_GitHub_logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  grid-column-start: 1;
+  grid-column-end: 2;
+
+}
+
+.block25{
+  background-image: url("images/2592543.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 18;
+  grid-row-end: 20;
+}
+
+.block26{
+  background-image: url("images/sunrise-beach-clipart-wallpaper-1-1000x300.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 18;
+}
+
+.block27{
+  background-image: url("images/photo_2021-03-26_00-34-16.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  grid-column-start: 1;
+  grid-row-start: 19;
+  grid-row-end: 23;
+}
+
+.block28{
+  background-image: url("images/10x-featured-social-media-image-size.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 19;
+  grid-row-end: 21;
+}
+
+.block29{
+  background-image: url("images/cd1062d1e000017cd25fc07fa0e976e8.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 20;
+  grid-row-end: 23;
+}
+
+.block30{
+  background-image: url("images/c573bf41-6a7c-4927-845c-4ca0260aad6b-760x400.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  grid-column-start: 3;
+  grid-column-end: 5;
+  grid-row-start: 21;
+  grid-row-end: 23;
+}
